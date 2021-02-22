@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Geekle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.7751 18.3126C18.7728 14.8308 19.628 11.402 21.2652 8.32917C22.9024 5.2563 25.2711 2.6339 28.1621 0.693604C18.775 3.37637 9.38765 9.24935 0 18.3126C9.38709 27.3788 18.7744 33.252 28.1621 35.9319C25.271 33.9915 22.9023 31.3691 21.2652 28.2961C19.628 25.2232 18.7728 21.7944 18.7751 18.3126Z" fill="white"/>
+                    </svg>
+                    <svg width="40" height="39" viewBox="0 0 40 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M39.2567 20.8438C39.1207 22.5749 38.751 24.2796 38.1576 25.9114C36.9373 29.2744 34.8037 32.2306 31.9964 34.4483C28.5871 37.1616 24.3567 38.6355 19.9994 38.628C17.4627 38.6281 14.9508 38.1285 12.6072 37.1578C10.2636 36.1871 8.13414 34.7642 6.34043 32.9705C4.54672 31.1768 3.1239 29.0474 2.15319 26.7038C1.18248 24.3601 0.682901 21.8483 0.682983 19.3116C0.683816 14.1893 2.71935 9.27705 6.34184 5.65547C9.96432 2.03389 14.8771 -0.000426345 19.9994 1.80027e-05C22.7187 -0.00369978 25.408 0.56845 27.8904 1.6788C30.3727 2.78915 32.5918 4.41255 34.4016 6.44217L30.6606 9.62619C29.3117 8.13883 27.666 6.95062 25.8297 6.13816C23.9935 5.32571 22.0074 4.90703 19.9994 4.90912C16.18 4.9104 12.5175 6.42818 9.81684 9.12885C7.11616 11.8295 5.59839 15.4921 5.59711 19.3114C5.59761 23.131 7.11513 26.794 9.81597 29.4948C12.5168 32.1956 16.1798 33.7132 19.9994 33.7137C23.4984 33.7202 26.8788 32.4455 29.5024 30.1303C30.8565 28.9433 31.9751 27.512 32.7999 25.9112H22.8632L23.8491 20.8436L39.2567 20.8438Z" fill="#73F9BC"/>
+                    </svg>
+                    <svg width="29" height="36" viewBox="0 0 29 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.838074 0.693604C3.72919 2.63386 6.09799 5.25623 7.73526 8.32909C9.37253 11.4019 10.2279 14.8307 10.2257 18.3126C10.2279 21.7944 9.37255 25.2233 7.73529 28.2962C6.09802 31.3691 3.72921 33.9916 0.838074 35.9319C10.2253 33.2486 19.6126 27.3755 29 18.3126C19.6129 9.2467 10.2256 3.37371 0.838074 0.693604Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.407837 5.99206V3.67934L7.84025 0.21106V2.95302L3.82682 4.76976L7.84025 6.58663V9.46034L0.407837 5.99206Z" fill="white"/>
+                     </svg>
+                    <svg width="10" height="14" viewBox="0 0 10 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.79884 13.0021C1.82534 13.0021 0.174194 12.2753 0.174194 10.9537C0.174194 10.2269 0.768893 9.66548 1.76006 9.46712C1.08303 9.0873 0.670043 8.49274 0.670043 7.84861C0.670043 6.9896 1.24809 6.34561 2.32198 5.9658C1.92865 5.71069 1.60595 5.36057 1.3837 4.94779C1.16145 4.535 1.04681 4.07286 1.05038 3.60405C1.04364 3.1832 1.13579 2.76665 1.31942 2.38791C1.50305 2.00918 1.77303 1.67884 2.10763 1.42349C2.81783 0.845312 3.74278 0.548096 4.86584 0.548096C6.05523 0.548096 7.06252 0.895001 7.77325 1.55551C8.2358 0.960815 8.92935 0.680251 9.9369 0.680251V2.79473C9.4846 2.77955 9.03271 2.83525 8.59764 2.9598C8.64839 3.17092 8.67604 3.38695 8.6801 3.60405C8.68865 4.02749 8.5974 4.44699 8.41373 4.82861C8.23006 5.21023 7.95913 5.54326 7.62286 5.80074C6.91266 6.37865 6.00422 6.65975 4.86465 6.65975C4.46469 6.6567 4.06612 6.61241 3.67525 6.52759C3.27879 6.64336 3.06403 6.7919 3.06403 7.00652C3.06403 7.32025 3.26227 7.41964 3.74133 7.41964H6.99499C8.89433 7.41964 9.96849 8.2949 9.96849 9.79843C9.96849 11.7964 8.01959 13.0021 4.79884 13.0021ZM4.83188 11.2018C6.59919 11.2018 7.44155 10.9211 7.44155 10.3428C7.44155 10.0289 7.16071 9.8472 6.6983 9.8472H4.25343C3.14689 9.8472 2.68435 10.0289 2.68435 10.4912C2.68475 10.9707 3.37843 11.2018 4.83188 11.2018ZM4.88143 2.36563C4.10515 2.36563 3.65913 2.81152 3.65913 3.60445C3.65913 4.38073 4.13819 4.85992 4.88143 4.85992C5.62467 4.85992 6.08722 4.39738 6.08722 3.60445C6.08722 2.81152 5.65771 2.3651 4.88143 2.3651V2.36563Z" fill="#73F9BC"/>
+                     </svg>
+                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.70173 8.21243C0.908795 7.40312 0.512329 6.32962 0.512329 4.9753C0.512329 3.68705 0.925313 2.63007 1.73463 1.80357C2.54382 0.961213 3.5848 0.548096 4.85601 0.548096C6.02875 0.548096 6.98661 0.911389 7.69734 1.65463C8.4242 2.39787 8.78736 3.37265 8.78736 4.61094C8.78736 5.00741 8.75432 5.37083 8.7378 5.65166H3.23829C3.42001 6.72503 3.99806 7.23753 5.1708 7.23753C5.92692 7.20857 6.64272 6.88904 7.16912 6.34548L8.62283 7.96412C7.7473 8.95528 6.57442 9.40104 4.90662 9.40104C3.56868 9.40157 2.49466 9.00537 1.70173 8.21243ZM3.28759 3.96787H6.07884C6.06285 3.04292 5.60031 2.56333 4.80737 2.56333C4.01444 2.56333 3.48582 3.04292 3.28759 3.96787Z" fill="#73F9BC"/>
+                    </svg>
+                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.70173 8.21243C0.908795 7.40312 0.512329 6.32962 0.512329 4.9753C0.512329 3.68705 0.925313 2.63007 1.73463 1.80357C2.54382 0.961213 3.5848 0.548096 4.85601 0.548096C6.02875 0.548096 6.98661 0.911389 7.69734 1.65463C8.4242 2.39787 8.78736 3.37265 8.78736 4.61094C8.78736 5.00741 8.75432 5.37083 8.7378 5.65166H3.23829C3.42001 6.72503 3.99806 7.23753 5.1708 7.23753C5.92692 7.20857 6.64272 6.88904 7.16912 6.34548L8.62283 7.96412C7.7473 8.95528 6.57442 9.40104 4.90662 9.40104C3.56868 9.40157 2.49466 9.00537 1.70173 8.21243ZM3.28759 3.96787H6.07884C6.06285 3.04292 5.60031 2.56333 4.80737 2.56333C4.01444 2.56333 3.48582 3.04292 3.28759 3.96787Z" fill="#73F9BC"/>
+                    </svg>
+                    <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.03946 7.06693L9.35933 12.2035H6.05545L4.04087 8.90032L3.42992 9.54418V12.2035H0.654663V0.146484H3.42992V6.40642L5.90744 3.74706H9.24356L6.03946 7.06693Z" fill="#73F9BC"/>
+                    </svg>
+                    <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.267212 12.2035V0.146484H3.04247V12.2035H0.267212Z" fill="#73F9BC"/>
+                    </svg>
+                    <svg width="9" height="10" viewBox="0 0 9 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.70173 8.21243C0.908795 7.40312 0.512329 6.32962 0.512329 4.9753C0.512329 3.68705 0.925313 2.63007 1.73463 1.80357C2.54382 0.961213 3.5848 0.548096 4.85601 0.548096C6.02875 0.548096 6.98661 0.911389 7.69734 1.65463C8.4242 2.39787 8.78736 3.37265 8.78736 4.61094C8.78736 5.00741 8.75432 5.37083 8.7378 5.65166H3.23829C3.42001 6.72503 3.99806 7.23753 5.1708 7.23753C5.92692 7.20857 6.64272 6.88904 7.16912 6.34548L8.62283 7.96412C7.7473 8.95528 6.57442 9.40104 4.90662 9.40104C3.56868 9.40157 2.49466 9.00537 1.70173 8.21243ZM3.28759 3.96787H6.07884C6.06285 3.04292 5.60031 2.56333 4.80737 2.56333C4.01444 2.56333 3.48582 3.04292 3.28759 3.96787Z" fill="#73F9BC"/>
+                    </svg>
+                    <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.6207 3.67934V5.99206L0.188293 9.46007V6.71851L4.20171 4.90178L0.188293 3.08477V0.21106L7.6207 3.67934Z" fill="white"/>
+                    </svg>
+
+                </div>
+            </div>
+            <div class="nav-wrp">
+                <span id="trigger" class="trigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                  </span>
+                <nav class="nav">
+                    <li class="nav-item">Agenda</li>
+                    <li class="nav-item">Tickets</li>
+                    <li class="nav-item">team</li>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="main-container">
+                <div class="main-padding">
+                    <div class="main-wrp">
+                        <div class="main-text">
+                            <p class="main-title">Worldwide Software<br>Architecture Summit</p>
+                            <p class="main-dive">Dive into</p>
+                            <p class="main-cloud">Cloud Architecture Optimization:</p>
+                            <p class="main-auto">Automation&Testing</p>
+                            <button class="btn">buy ticket</button>
+                        </div>
+                        <div class="main-foto"></div>
+                    </div>
+                    <div class="main-text-border">
+                        <span class="main-text-border-title">ONLINE, JANUARY 26-27. DURATION: 10:00-19:00</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-title">AGENDA</div>
+            <div class="footer-text">choose your time zone</div>
+            <div class="footer-txt">Some talks are pre-recorded due to speakers’ time-zone differences</div>
+            <div class="footer-btn">
+                <button class="footer-btn-btn">CET (Central European Time)</button>
+                <button class="footer-btn-btn">CST (Central Standard Time)</button>
+                <button class="footer-btn-btn">Vendor track</button>
+            </div>
+            <div class="track-wrap track-mobi">
+                <div class="track">
+                    <p class="track-title">Career Track</p>
+                    <p class="track-text">Aimed to upgrade Developers’ skills to evolve to Software Architect</p>
+                </div>
+                <div class="track trackpro">
+                    <p class="track-title pro">Pro Track</p>
+                    <p class="track-text">Practical tech cases for Experienced Software Architects, CTOs and Senior Software Engineers</p>
+                </div>
+            </div>
+            <div class="nfp">
+                NFR – Non-functional requirenment
+            </div>
+            <div class="speakers-main">
+                <div class="speakers">
+                    <div class="speakers-wrap">
+                        <div class="speakers-wrapper">
+                            <div class="speakers-wrapper-text">
+                                <p class="speakers-time">10:10 — 10:40</p>
+                                <p class="speakers-text">Alexander Kuttig</p>
+                                <div class="">
+                                    <img class="speakers-logo" src="img/alpha.png" alt="1">
+                                </div>
+
+                            </div>
+                            <div class="speakers-foto">
+                                <img src="img/Alexander-Kuttig-1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="speakers-wrapper-text">
+                            <div class="speakers-wrap-text">
+                                <div class="speakers-txt">Using AWS and Google Cloud in a cost-efficient way"</div>
+                                <div class="speakers-wrap-btn">
+                                    <button class="speakers-btn">show abstract</button>
+                                    <button class="speakers-btn">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speakers-hr"></div>
+                    <div class="speakers-wrap">
+                        <div class="speakers-wrapper">
+                            <div class="speakers-wrapper-text">
+                                <p class="speakers-time">10:40 — 11:10</p>
+                                <p class="speakers-text">Ivan Rigoni</p>
+                                <div class="">
+                                    <img class="speakers-logo" src="img/Ivan Rigoni.png" alt="1">
+                                </div>
+
+                            </div>
+                            <div class="">
+                                <img class="speakers-foto" src="img/Ivan Rigoni.png" alt="">
+                            </div>
+                        </div>
+                        <div class="speakers-wrapper-text">
+                            <div class="speakers-wrap-text">
+                                <div class="speakers-txt">"A Million Requests in 10 minutes""</div>
+                                <div class="speakers-wrap-btn">
+                                    <button class="speakers-btn">show abstract</button>
+                                    <button class="speakers-btn">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speakers-hr"></div>
+                    <div class="speakers-wrap">
+                        <div class="speakers-wrapper">
+                            <div class="speakers-wrapper-text">
+                                <p class="speakers-time">11:10 — 11:40</p>
+                                <p class="speakers-text">Rohit Bhardwaj</p>
+                                <div class="">
+                                    <img class="speakers-logo" src="img/Rohit Bhardwaj.png" alt="1">
+                                </div>
+
+                            </div>
+                            <div class="">
+                                <img class="speakers-foto" src="img/Rohit Bhardwaj.png" alt="">
+                            </div>
+                        </div>
+                        <div class="speakers-wrapper-text">
+                            <div class="speakers-wrap-text">
+                                <div class="speakers-txt">"Resilient Cloud Architecture Design Patterns"</div>
+                                <div class="speakers-wrap-btn">
+                                    <button class="speakers-btn">show abstract</button>
+                                    <button class="speakers-btn">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speakers-hr"></div>
+                    <div class="speakers-wrap ">
+                        <div class="speakers-wrapper break">
+                            <div class="speakers-wrapper-text ">
+                                <p class="speakers-time">11:40 — 12:10</p>
+                            </div>
+                        </div>
+                        <div class="speakers-wrapper-text">
+                            <div class="speakers-wrap-text">
+                                <div class="speakers-txt">Q&A"</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="speakers">
+                    <div class="speakers-wrap">
+                        <div class="speakers-wrapper">
+                            <div class="speakers-wrapper-text">
+                                <p class="speakers-time">10:20 — 10:50</p>
+                                <p class="speakers-text">Heidi Waterhouse</p>
+                                <div class="">
+                                    <img class="speakers-logo" src="img/alpha.png" alt="1">
+                                </div>
+
+                            </div>
+                            <div>
+                                <img class="speakers-foto" src="img/Heidi Waterhouse.png" alt="Heidi Waterhouse">
+                            </div>
+                        </div>
+                        <div class="speakers-wrapper-text">
+                            <div class="speakers-wrap-text">
+                                <div class="speakers-txt">"Breaking Strain: A story about capacities and testing"</div>
+                                <div class="speakers-wrap-btn">
+                                    <button class="speakers-btn">show abstract</button>
+                                    <button class="speakers-btn">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speakers-hr"></div>
+                    <div class="speakers-wrap">
+                        <div class="speakers-wrapper">
+                            <div class="speakers-wrapper-text">
+                                <p class="speakers-time">10:50 — 11:20</p>
+                                <p class="speakers-text">Emma Thomas</p>
+                                <div class="">
+                                    <img class="speakers-logo" src="img/oracle.png" alt="1">
+                                </div>
+
+                            </div>
+                            <div class="">
+                                <img class="speakers-foto" src="img/Emma Thomas.png" alt="Emma Thomas">
+                            </div>
+                        </div>
+                        <div class="speakers-wrapper-text">
+                            <div class="speakers-wrap-text">
+                                <div class="speakers-txt">"But we wanted our solution to transmit data faster than the speed of light"</div>
+                                <div class="speakers-wrap-btn">
+                                    <button class="speakers-btn">show abstract</button>
+                                    <button class="speakers-btn">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speakers-hr"></div>
+                    <div class="speakers-wrap">
+                        <div class="speakers-wrapper">
+                            <div class="speakers-wrapper-text">
+                                <p class="speakers-time">11:20 — 11:50</p>
+                                <p class="speakers-text">Michael Ritchson</p>
+                                <div class="">
+                                    <img class="speakers-logo" src="img/nasa.png" alt="1">
+                                </div>
+
+                            </div>
+                            <div class="">
+                                <img class="speakers-foto" src="img/Michael Ritchson.png" alt="Michael Ritchson">
+                            </div>
+                        </div>
+                        <div class="speakers-wrapper-text">
+                            <div class="speakers-wrap-text">
+                                <div class="speakers-txt">"Apache Tomee, a successful open source migration journey for NASA"</div>
+                                <div class="speakers-wrap-btn">
+                                    <button class="speakers-btn">show abstract</button>
+                                    <button class="speakers-btn">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speakers-hr"></div>
+                    <div class="speakers-wrap">
+                        <div class="speakers-wrapper break">
+                            <div class="speakers-wrapper-text">
+                                <p class="speakers-time">11:50 — 12:20</p>
+                            </div>
+                        </div>
+                        <div class="speakers-wrapper-text">
+                            <div class="speakers-wrap-text">
+                                <div class="speakers-txt">Q&A"</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-footer "></div>
+            <div class="mobi">
+                <button class="btn-mobi">CET (Central European Time)<img class="btn-mobi-arrow" src="img/Polygon 5.png"></button>
+                <div class="track-mobi">
+                    <p class="track-title">Career Track</p>
+                    <p class="track-text">Aimed to upgrade Developers’ skills to evolve to Software Architect</p>
+                </div>
+                <div class="nfp mobi">
+                    NFR – Non-functional requirenment
+                </div>
+                <div class="speakers-main-mobi-left">
+                    <div class="speakers-mobi">
+                        <div class="speakers-wrap-mobi">
+                            <div class="speakers-wrapper-mobi">
+                                <div class="speakers-foto-mobi">
+                                    <img src="img/Alexander-Kuttig-1.png" width="100" alt="">
+                                </div>
+                                <div class="">
+                                    <img class="speakers-logo-mobi" src="img/alpha.png" alt="1">
+                                </div>
+                            </div>
+                            <div class="speakers-wrapper-text-mobi">
+                                <div class="speakers-wrap-text-mobi">
+                                    <p class="speakers-time">10:10 — 10:40</p>
+                                    <p class="speakers-text">Alexander Kuttig</p>
+                                </div>
+                                <div class="speakers-txt-mobi">Using AWS and Google Cloud in a cost-efficient way"</div>
+                                <div class="speakers-wrap-btn-mobi">
+                                    <button class="speakers-btn-mobi">show abstract</button>
+                                    <button class="speakers-btn-mobi">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speakers-hr"></div>
+                        <div class="speakers-wrap-mobi">
+                            <div class="speakers-wrapper-mobi">
+                                <div class="speakers-foto-mobi">
+                                    <img src="img/Ivan Rigoni.png" width="100" alt="">
+                                </div>
+                                <div class="">
+                                    <img class="speakers-logo-mobi" src="img/alpha.png" alt="1">
+                                </div>
+                            </div>
+                            <div class="speakers-wrapper-text-mobi">
+                                <div class="speakers-wrap-text-mobi">
+                                    <p class="speakers-time">10:40 — 11:10</p>
+                                    <p class="speakers-text">Ivan Rigoni</p>
+                                </div>
+                                <div class="speakers-txt-mobi">"A Million Requests in 10 minutes"</div>
+                                <div class="speakers-wrap-btn-mobi">
+                                    <button class="speakers-btn-mobi">show abstract</button>
+                                    <button class="speakers-btn-mobi">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speakers-hr"></div>
+                        <div class="speakers-wrap-mobi">
+                            <div class="speakers-wrapper-mobi">
+                                <div class="speakers-foto-mobi">
+                                    <img src="img/Rohit Bhardwaj.png" width="100" alt="">
+                                </div>
+                                <div class="">
+                                    <img class="speakers-logo-mobi" src="img/alpha.png" alt="1">
+                                </div>
+                            </div>
+                            <div class="speakers-wrapper-text-mobi">
+                                <div class="speakers-wrap-text-mobi">
+                                    <p class="speakers-time">11:10 — 11:40</p>
+                                    <p class="speakers-text">Rohit Bhardwaj</p>
+                                </div>
+                                <div class="speakers-txt-mobi">"Resilient Cloud Architecture Design Patterns""</div>
+                                <div class="speakers-wrap-btn-mobi">
+                                    <button class="speakers-btn-mobi">show abstract</button>
+                                    <button class="speakers-btn-mobi">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speakers-hr"></div>
+                        <div class="speakers-wrap-mobi">
+                            <div class="speakers-wrapper-mobi"></div>
+                            <div class=" speakers-wrapper-text-mobi">
+                                <div class="speakers-wrap-text-mobi">
+                                    <p class="speakers-time">11:40 — 12:10</p>
+                                </div>
+                                <div class="speakers-txt-mobi">Q&A"</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trackpro-mobi">
+                    <p class="track-title pro">Pro Track</p>
+                    <p class="track-text">Practical tech cases for Experienced Software Architects, CTOs and Senior Software Engineers</p>
+                </div>
+                <div class="nfp-2 mobi">
+                    NFR – Non-functional requirenment
+                </div>
+                <div class="speakers-main-mobi-right">
+                    <div class="speakers-mobi">
+                        <div class="speakers-wrap-mobi">
+                            <div class="speakers-wrapper-mobi">
+                                <div class="speakers-foto-mobi">
+                                    <img src="img/Heidi Waterhouse.png" width="100" alt="">
+                                </div>
+                                <div class="">
+                                    <img class="speakers-logo-mobi" src="img/alpha.png" alt="1">
+                                </div>
+                            </div>
+                            <div class="speakers-wrapper-text-mobi">
+                                <div class="speakers-wrap-text-mobi">
+                                    <p class="speakers-time">10:10 — 10:40</p>
+                                    <p class="speakers-text">Heidi Waterhouse</p>
+                                </div>
+                                <div class="speakers-txt-mobi">"Breaking Strain: A story about capacities and testing"</div>
+                                <div class="speakers-wrap-btn-mobi">
+                                    <button class="speakers-btn-mobi">show abstract</button>
+                                    <button class="speakers-btn-mobi">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speakers-hr"></div>
+                        <div class="speakers-wrap-mobi">
+                            <div class="speakers-wrapper-mobi">
+                                <div class="speakers-foto-mobi">
+                                    <img src="img/Emma Thomas.png" width="100" alt="">
+                                </div>
+                                <div class="">
+                                    <img class="speakers-logo-mobi" src="img/oracle.png" alt="1">
+                                </div>
+                            </div>
+                            <div class="speakers-wrapper-text-mobi">
+                                <div class="speakers-wrap-text-mobi">
+                                    <p class="speakers-time">10:40 — 11:10</p>
+                                    <p class="speakers-text">Emma Thomas</p>
+                                </div>
+                                <div class="speakers-txt-mobi">But we wanted our solution to transmit data faster than the speed of light"</div>
+                                <div class="speakers-wrap-btn-mobi">
+                                    <button class="speakers-btn-mobi">show abstract</button>
+                                    <button class="speakers-btn-mobi">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speakers-hr"></div>
+                        <div class="speakers-wrap-mobi">
+                            <div class="speakers-wrapper-mobi">
+                                <div class="speakers-foto-mobi">
+                                    <img src="img/Michael Ritchson.png" width="100" alt="">
+                                </div>
+                                <div class="">
+                                    <img class="speakers-logo-mobi" src="img/nasa.png" alt="1">
+                                </div>
+                            </div>
+                            <div class="speakers-wrapper-text-mobi">
+                                <div class="speakers-wrap-text-mobi">
+                                    <p class="speakers-time">11:10 — 11:40</p>
+                                    <p class="speakers-text">Michael Ritchson</p>
+                                </div>
+                                <div class="speakers-txt-mobi">Apache Tomee, a successful open source migration journey for NASA"</div>
+                                <div class="speakers-wrap-btn-mobi">
+                                    <button class="speakers-btn-mobi">show abstract</button>
+                                    <button class="speakers-btn-mobi">add to calendar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="speakers-hr"></div>
+                        <div class="speakers-wrap-mobi">
+                            <div class="speakers-wrapper-mobi"></div>
+                            <div class=" speakers-wrapper-text-mobi">
+                                <div class="speakers-wrap-text-mobi">
+                                    <p class="speakers-time">11:40 — 12:10</p>
+                                </div>
+                                <div class="speakers-txt-mobi">Q&A"</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
